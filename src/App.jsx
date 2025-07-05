@@ -1,11 +1,13 @@
-import './App.css'
-
 import React from 'react'
+import { Route, Routes } from 'react-router-dom'
+import Heading from './components/Heading'
 
 const App = () => {
   return (
     <div>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores reiciendis quasi nulla iste facere deserunt accusamus fugiat minus deleniti velit, ea rem a debitis illo eveniet saepe temporibus odit maiores?
+      <Routes>
+        <Route path='/heading' element={<Heading/>}/>
+      </Routes>
     </div>
   )
 }
